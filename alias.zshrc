@@ -19,7 +19,7 @@ alias gupdate="php bin/console glpi:database:update --allow-unstable --no-teleme
 alias gupdate-test="gupdate --config-dir=./tests/config"
 
 # E2e tests
-alias open-e2e="export CYPRESS_BASE_URL="$GLPI_URL" && npm run test:e2e"
+alias open-e2e="export CYPRESS_BASE_URL="$GLPI_URL" && npx cypress open --project tests --e2e --browser electron"
 alias run-e2e-local="export CYPRESS_BASE_URL="$GLPI_URL" && npx cypress run --project tests"
 alias run-e2e-docker="export CYPRESS_BASE_URL="$GLPI_URL" && ./tests/run_tests.sh e2e"
 
