@@ -9,14 +9,17 @@ alias ginstall="php bin/console glpi:database:install --no-telemetry -p$DB_USER 
 alias ginstall-force="php bin/console glpi:database:install --no-telemetry --force -n"
 
 # Install test database
-alias ginstall-test="ginstall --config-dir=./tests/config"
-alias ginstall-test-force="ginstall-force --config-dir=./tests/config"
+alias ginstall-test="ginstall --env=testing"
+alias ginstall-test-old="ginstall --config-dir=./tests/config
+alias ginstall-test-force="ginstall-force --env=testing"
+alias ginstall-test-force-old="ginstall-force --config-dir=./tests/config"
 
 # Update database
 alias gupdate="php bin/console glpi:database:update --allow-unstable --no-telemetry --force -n"
 
 # Update test database
-alias gupdate-test="gupdate --config-dir=./tests/config"
+alias gupdate-test="gupdate --env=testing"
+alias gupdate-test-old="gupdate --config-dir=./tests/config"
 
 # E2e tests
 alias open-e2e="export CYPRESS_BASE_URL="$GLPI_URL" && npx cypress open --project tests --e2e --browser electron"
