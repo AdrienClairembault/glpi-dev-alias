@@ -10,7 +10,7 @@ alias ginstall-force="php bin/console glpi:database:install --no-telemetry --for
 
 # Install test database
 alias ginstall-test="ginstall --env=testing"
-alias ginstall-test-old="ginstall --config-dir=./tests/config
+alias ginstall-test-old="ginstall --config-dir=./tests/config"
 alias ginstall-test-force="ginstall-force --env=testing"
 alias ginstall-test-force-old="ginstall-force --config-dir=./tests/config"
 
