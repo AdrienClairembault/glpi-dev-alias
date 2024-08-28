@@ -34,3 +34,6 @@ alias lint-js=".github/actions/lint_js-lint.sh"
 alias lint-misc=".github/actions/lint_misc-lint.sh"
 alias lint="lint-php && lint-scss && lint-twig && lint-js"
 
+# Using docker
+alias dcsl="docker compose exec app bin/console"
+alias dsql="docker compose exec db mariadb -u glpi -pglpi -D glpi"
