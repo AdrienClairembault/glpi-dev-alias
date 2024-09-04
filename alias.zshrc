@@ -37,3 +37,11 @@ alias lint="lint-php && lint-scss && lint-twig && lint-js"
 # Using docker
 alias dcsl="docker compose exec app bin/console"
 alias dsql="docker compose exec db mariadb -u glpi -pglpi -D glpi"
+
+# PHPStan
+alias phpstan="php vendor/bin/phpstan analyze"
+
+# PHPUnit
+alias phpunit="XDEBUG_MODE=off vendor/bin/phpunit"
+alias phpunit-debug="vendor/bin/phpunit"
+
