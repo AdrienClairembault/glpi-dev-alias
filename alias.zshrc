@@ -44,4 +44,6 @@ alias phpstan="php vendor/bin/phpstan analyze"
 # PHPUnit
 alias phpunit="XDEBUG_MODE=off vendor/bin/phpunit"
 alias phpunit-debug="vendor/bin/phpunit"
+alias phpunit-profile="XDEBUG_MODE=profile vendor/bin/phpunit"
+
 
