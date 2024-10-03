@@ -15,7 +15,7 @@ alias ginstall-test-force="xdebug-off ginstall-force --env=testing"
 alias ginstall-test-force-old="xdebug-off ginstall-force --config-dir=./tests/config"
 
 # Update database
-alias gupdate="xdebug-off php bin/console glpi:database:update --allow-unstable --no-telemetry --force -n"
+alias gupdate="xdebug-off php bin/console glpi:database:update --allow-unstable --no-telemetry --force -n --skip-db-checks"
 
 # Update test database
 alias gupdate-test="xdebug-off gupdate --env=testing"
