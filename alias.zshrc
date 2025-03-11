@@ -2,7 +2,8 @@ SCRIPT_PATH=${0:A:h};
 source $SCRIPT_PATH/config
 
 # Build dependencies + locales
-alias gbuild="php bin/console dependencies install && php bin/console locales:compile"
+alias gbuild="php bin/console dependencies install"
+alias gbuild-old="php bin/console dependencies install && php bin/console locales:compile"
 
 # Install database
 alias ginstall="php bin/console glpi:database:install --no-telemetry -p$DB_USER -u$DB_PASSWORD"
